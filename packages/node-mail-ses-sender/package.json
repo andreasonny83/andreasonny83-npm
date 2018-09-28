@@ -1,6 +1,6 @@
 {
   "name": "@andreasonny83/node-mail-ses-sender",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +13,13 @@
     "test": "jest",
     "format": "prettier --write '**/*.{js,css}'"
   },
-  "keywords": ["node", "email", "mail-sender", "AWS", "SES"],
+  "keywords": [
+    "node",
+    "email",
+    "mail-sender",
+    "AWS",
+    "SES"
+  ],
   "author": "andreasonny83 <andreasonny83@gmail.com>",
   "license": "MIT",
   "dependencies": {
