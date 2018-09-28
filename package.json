@@ -33,14 +33,14 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,mdx}": [
+    "*.{js,jsx,ts,tsx}": [
       "npm run format",
       "git add"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "ynpm run lint",
+      "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }

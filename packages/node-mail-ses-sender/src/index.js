@@ -5,6 +5,8 @@
 
 'use strict';
 
+// test project
+
 const AWS = require('aws-sdk');
 const { EmailGenerator } = require('./email-generator');
 const { EmailSenderError } = require('./error-handler');

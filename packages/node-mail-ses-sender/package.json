@@ -1,6 +1,9 @@
 {
   "name": "@andreasonny83/node-mail-ses-sender",
   "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Send emails using NodeJS and AWS SES",
   "main": "src/index.js",
   "scripts": {
