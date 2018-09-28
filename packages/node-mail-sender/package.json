@@ -1,0 +1,20 @@
+{
+  "name": "@andreasonny83/node-mail-ses-sender",
+  "version": "0.0.0",
+  "description": "Send emails using NodeJS and AWS SES",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "AWS_REGION=us-east-1 serverless offline start",
+    "deploy": "serverless deploy",
+    "test:watch": "jest --watchAll",
+    "test": "jest",
+    "format": "prettier --write '**/*.{js,css}'"
+  },
+  "keywords": ["node", "email", "mail-sender", "AWS", "SES"],
+  "author": "andreasonny83 <andreasonny83@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.315.0",
+    "dotenv": "^6.0.0"
+  }
+}

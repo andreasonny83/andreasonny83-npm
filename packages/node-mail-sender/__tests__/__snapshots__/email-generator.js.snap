@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailGenerator should generate an email object 1`] = `
+Object {
+  "Destination": Object {
+    "ToAddresses": Array [
+      "fake_recipient@mail.com",
+    ],
+  },
+  "Message": Object {
+    "Body": Object {
+      "Html": Object {
+        "Charset": "UTF-8",
+        "Data": "Hello Jest,
+    On 31st December 1999, heisenberg@crystal.blue <Heisenberg> left you the following message:
+    Hello! This is the end of an era
+    
+    This is an automatic e-mail.
+    If you do not wish to continue receiving these messages or for other queries, plase contact your web administrator.",
+      },
+      "Text": Object {
+        "Charset": "UTF-8",
+        "Data": "
+      From: heisenberg@crystal.blue <Heisenberg> <br/>
+      Date: 31st December 1999 <br/>
+      Message: Hello! This is the end of an era <br/>
+      Footer: 
+    This is an automatic e-mail.
+    If you do not wish to continue receiving these messages or for other queries, plase contact your web administrator. <br/>
+      ",
+      },
+    },
+    "Subject": Object {
+      "Charset": "UTF-8",
+      "Data": "test email",
+    },
+  },
+  "Source": "fake_user@mail.com",
+}
+`;

@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@commitlint/config-lerna-scopes": "^7.1.2",
+    "commitizen": "^2.10.1",
+    "husky": "^1.0.1",
+    "jest": "^23.6.0",
+    "lerna": "^3.4.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.1"
+  },
+  "scripts": {
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "format": "lerna run format && echo",
+    "lint": "lerna run lint",
+    "test": "lerna run test",
+    "prerelease": "lerna run build",
+    "precommit": "lint-staged",
+    "release": "lerna publish --conventional-commits",
+    "lerna": "lerna",
+    "commit": "git-cz"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx}": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ynpm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
