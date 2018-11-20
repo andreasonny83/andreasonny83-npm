@@ -6,13 +6,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 <a name="0.0.2"></a>
 ## 0.0.2 (2018-11-20)
 
-**Note:** Version bump only for package @andreasonny83/node-mail-ses-sender
-
-
-
-
-
-<a name="0.0.1"></a>
-## 0.0.1 (2018-09-28)
-
-**Note:** Version bump only for package @andreasonny83/node-mail-ses-sender
+**Note:** Version bump only for package @andreasonny83/git-safe
